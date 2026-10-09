@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sữa Bỉm KUTIN</title>
+<style>
+:root{--bg:#f7fbff;--card:#fff;--ink:#17324d;--mute:#5d7389;--pri:#2a9df4;--pri2:#1b7fd0;--acc:#ffc94a;--pink:#ff8fab;--line:#e1ecf6;--soft:#eaf5ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1b28;--card:#16283a;--ink:#e8f1fa;--mute:#9bb2c7;--line:#243a50;--soft:#1b3047}}
+:root[data-theme="dark"]{--bg:#0f1b28;--card:#16283a;--ink:#e8f1fa;--mute:#9bb2c7;--line:#243a50;--soft:#1b3047}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Nunito","Segoe UI",system-ui,-apple-system,Arial,sans-serif}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+.w{max-width:1120px;margin:auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--card);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:14px;height:64px;flex-wrap:wrap}
+.logo{font-weight:900;font-size:21px;color:var(--pri)}.logo b{color:var(--pink)}
+.nav nav{display:flex;gap:16px;margin-left:auto;font-weight:700;font-size:15px;overflow-x:auto}
+.nav nav a:hover{color:var(--pri)}
+.btn{background:var(--pri);color:#fff;border:0;border-radius:999px;padding:11px 22px;font-weight:800}.btn:hover{background:var(--pri2)}
+.btn.o{background:transparent;color:var(--pri);border:2px solid var(--pri)}.btn.y{background:var(--acc);color:#4a3600}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font-weight:700;font-size:14px}
+.chip.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.hero{background:linear-gradient(135deg,var(--soft),var(--bg));padding:46px 0}
+.hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(28px,5vw,46px);line-height:1.15;margin:0 0 12px}
+.hero p{color:var(--mute);font-size:18px}
+.art{font-size:110px;text-align:center;background:var(--card);border-radius:36px;padding:30px;box-shadow:0 10px 30px #2a9df425}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;display:flex;flex-direction:column;gap:6px}
+.card .im{font-size:64px;text-align:center;background:var(--soft);border-radius:14px;padding:18px;position:relative}
+.badge{position:absolute;top:8px;left:8px;background:var(--pink);color:#fff;font-size:12px;font-weight:800;border-radius:99px;padding:2px 10px}
+.price{font-weight:900;color:var(--pri);font-size:18px}.old{color:var(--mute);text-decoration:line-through;font-size:14px;margin-left:6px;font-weight:400}
+h2{font-size:26px;margin:36px 0 16px}.sec{padding-bottom:20px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.feat div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;text-align:center}.feat span{font-size:34px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.two.s{grid-template-columns:1.4fr 1fr}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
+input,select,textarea{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);font:inherit;margin:4px 0 12px}
+label{font-weight:700;font-size:14px}
+.row{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:99px}.qty button{border:0;background:none;color:var(--ink);width:34px;height:34px;font-size:18px}
+.pay{display:flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:8px;font-weight:700}.pay input{width:auto;margin:0}
+.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%}td,th{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin-bottom:10px}summary{font-weight:800;cursor:pointer}
+footer{background:var(--card);border-top:1px solid var(--line);margin-top:50px;padding:30px 0;color:var(--mute);font-size:14px}
+footer .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}footer h4{color:var(--ink);margin:0 0 8px}
+.bc{color:var(--mute);font-size:14px;margin:18px 0}
+#cnt{background:var(--pink);color:#fff;border-radius:99px;padding:0 8px;font-size:13px;margin-left:4px}
+@media(max-width:760px){.hero .w,.two,.two.s{grid-template-columns:1fr}.art{font-size:80px}.nav nav{margin-left:0;order:3;width:100%;padding-bottom:8px}}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+<a href="#/" class="logo">Sữa Bỉm <b>KUTIN</b></a>
+<nav id="menu"></nav>
+<button class="chip" id="lg" aria-label="language"></button>
+<a href="#/cart" class="btn" style="padding:8px 16px">🛒<span id="cnt">0</span></a>
+</div></header>
+<main id="app" class="w"></main>
+<footer><div class="w">
+<div><div class="logo">Sữa Bỉm <b>KUTIN</b></div><p id="ft1"></p></div>
+<div><h4 id="ft2"></h4><div>📞 1900 6868<br>✉️ hello@kutin.vn<br>📍 Hồ Chí Minh, Việt Nam</div></div>
+<div><h4 id="ft3"></h4><div><a href="#/policy">🚚 <span class="pl"></span></a><br><a href="#/faq">❓ FAQ</a></div></div>
+</div></footer>
+<script>
+const $=s=>document.querySelector(s);
+let lang='vi',cart=[],cat='all',q='';
+try{lang=localStorage.getItem('kl')||'vi';cart=JSON.parse(localStorage.getItem('kc')||'[]')}catch(e){}
+const save=()=>{try{localStorage.setItem('kl',lang);localStorage.setItem('kc',JSON.stringify(cart))}catch(e){}};
+const T={vi:{home:'Trang chủ',shop:'Cửa hàng',milk:'Sữa bột',diaper:'Bỉm tã',about:'Giới thiệu',contact:'Liên hệ',all:'Tất cả',
+h1:'Dinh dưỡng & chăm sóc êm ái cho bé yêu',h2:'Sữa công thức và bỉm cao cấp, chính hãng, giao nhanh toàn quốc.',buy:'Mua ngay',add:'Thêm vào giỏ',feat:'Sản phẩm nổi bật',cats:'Danh mục',
+f1:'Chính hãng 100%',f2:'Giao hàng nhanh 2h',f3:'Đổi trả 7 ngày',f4:'Miễn phí ship từ 500k',cart:'Giỏ hàng',empty:'Giỏ hàng trống',sub:'Tạm tính',ship:'Phí ship',total:'Tổng cộng',free:'Miễn phí',
+checkout:'Thanh toán',name:'Họ và tên',phone:'Số điện thoại',email:'Email',prov:'Tỉnh/Thành phố',addr:'Địa chỉ nhận hàng',note:'Ghi chú',cod:'Thanh toán khi nhận hàng (COD)',bank:'Chuyển khoản ngân hàng',momo:'Ví MoMo',card:'Thẻ Visa/Mastercard',pm:'Phương thức thanh toán',place:'Đặt hàng',
+ok:'Đặt hàng thành công!',okp:'Cảm ơn bạn. Mã đơn hàng:',back:'Tiếp tục mua sắm',opt:'Lựa chọn',qty:'Số lượng',desc:'Mô tả',spec:'Thông số',age:'Độ tuổi',search:'Tìm sản phẩm...',
+ft1:'Sữa và bỉm an toàn cho bé, đồng hành cùng mẹ mỗi ngày.',ft2:'Liên hệ',ft3:'Hỗ trợ',pol:'Giao hàng & đổi trả',remove:'Xóa',related:'Sản phẩm liên quan',
+abt:'Về KUTIN',abtp:'Sữa Bỉm KUTIN ra đời với mong muốn mang đến cho các mẹ nguồn dinh dưỡng và bỉm tã an toàn, nhập khẩu chính ngạch, kiểm định nghiêm ngặt. Chúng tôi tin rằng mỗi bé đều xứng đáng được chăm sóc tốt nhất.',
+msg:'Nội dung',send:'Gửi tin nhắn',sent:'Đã gửi! Chúng tôi sẽ phản hồi sớm.',req:'Vui lòng điền đủ thông tin bắt buộc.',
+pt:'Chính sách giao hàng & đổi trả',pb:['Giao nội thành 2–4 giờ, toàn quốc 2–4 ngày.','Miễn phí vận chuyển cho đơn từ 500.000đ, còn lại 30.000đ.','Đổi trả trong 7 ngày nếu sản phẩm lỗi hoặc còn nguyên seal.','Sản phẩm sữa chỉ đổi khi chưa mở nắp.'],
+faq:[['Sữa có chính hãng không?','Tất cả sản phẩm đều có tem phụ tiếng Việt và giấy tờ nhập khẩu đầy đủ.'],['Làm sao chọn size bỉm?','Chọn theo cân nặng của bé ghi trên bao bì; bạn có thể xem bảng size ở mỗi sản phẩm.'],['Có hỗ trợ thanh toán online?','Có: chuyển khoản, MoMo, thẻ Visa/Mastercard và COD.']]},
+en:{home:'Home',shop:'Shop',milk:'Baby Formula',diaper:'Diapers',about:'About',contact:'Contact',all:'All',
+h1:'Gentle nutrition & care for your little one',h2:'Premium, authentic formula and diapers with fast nationwide delivery.',buy:'Shop now',add:'Add to cart',feat:'Featured products',cats:'Categories',
+f1:'100% authentic',f2:'2-hour delivery',f3:'7-day returns',f4:'Free shipping over 500k',cart:'Shopping cart',empty:'Your cart is empty',sub:'Subtotal',ship:'Shipping',total:'Total',free:'Free',
+checkout:'Checkout',name:'Full name',phone:'Phone number',email:'Email',prov:'Province/City',addr:'Delivery address',note:'Notes',cod:'Cash on delivery (COD)',bank:'Bank transfer',momo:'MoMo wallet',card:'Visa/Mastercard',pm:'Payment method',place:'Place order',
+ok:'Order placed!',okp:'Thank you. Your order code:',back:'Continue shopping',opt:'Option',qty:'Quantity',desc:'Description',spec:'Details',age:'Age',search:'Search products...',
+ft1:'Safe milk and diapers for babies, by every mom’s side.',ft2:'Contact',ft3:'Support',pol:'Shipping & returns',remove:'Remove',related:'Related products',
+abt:'About KUTIN',abtp:'Sữa Bỉm KUTIN was founded to give moms safe, officially imported, strictly tested nutrition and diapers. We believe every baby deserves the very best care.',
+msg:'Message',send:'Send message',sent:'Sent! We will reply soon.',req:'Please fill in all required fields.',
+pt:'Shipping & return policy',pb:['Inner-city delivery in 2–4 hours, nationwide in 2–4 days.','Free shipping on orders over 500,000₫, otherwise 30,000₫.','7-day returns for defective or sealed items.','Formula can only be returned if unopened.'],
+faq:[['Is the formula authentic?','Every product carries a Vietnamese label and full import documents.'],['How do I pick a diaper size?','Choose by your baby’s weight shown on the pack; each product has a size chart.'],['Are online payments supported?','Yes: bank transfer, MoMo, Visa/Mastercard and COD.']]}};
+const t=k=>T[lang][k];
+const P=[
+{id:1,c:'milk',e:'🍼',vi:'KUTIN Gold Step 1 (0–6 tháng)',en:'KUTIN Gold Step 1 (0–6 months)',p:520000,o:580000,b:'-10%',age:'0–6',opt:['400g','800g'],dv:'Sữa công thức cao cấp giàu DHA, ARA, HMO hỗ trợ trí não và miễn dịch cho bé sơ sinh.',de:'Premium formula rich in DHA, ARA and HMO to support newborn brain and immunity.'},
+{id:2,c:'milk',e:'🍼',vi:'KUTIN Gold Step 2 (6–12 tháng)',en:'KUTIN Gold Step 2 (6–12 months)',p:510000,o:560000,age:'6–12',opt:['400g','800g'],dv:'Công thức bổ sung canxi, vitamin D giúp bé phát triển xương chắc khỏe giai đoạn ăn dặm.',de:'Added calcium and vitamin D for strong bones during the weaning stage.'},
+{id:3,c:'milk',e:'🥛',vi:'KUTIN Growth Step 3 (1–3 tuổi)',en:'KUTIN Growth Step 3 (1–3 years)',p:490000,age:'12–36',opt:['400g','900g'],dv:'Hỗ trợ tăng chiều cao, cân nặng và tiêu hóa khỏe với prebiotic FOS/GOS.',de:'Supports height, weight and digestion with FOS/GOS prebiotics.'},
+{id:4,c:'milk',e:'🥛',vi:'KUTIN Organic A2 (từ 1 tuổi)',en:'KUTIN Organic A2 (1+ year)',p:690000,o:750000,b:'HOT',age:'12+',opt:['800g'],dv:'Sữa hữu cơ đạm A2 dịu nhẹ, phù hợp bé có hệ tiêu hóa nhạy cảm.',de:'Organic A2 protein, gentle for babies with sensitive tummies.'},
+{id:5,c:'diaper',e:'👶',vi:'Bỉm dán KUTIN Newborn',en:'KUTIN Newborn Tape Diapers',p:210000,age:'< 5kg',opt:['NB 66 miếng','S 58 miếng'],dv:'Bề mặt cotton siêu mềm, vạch báo ướt, thiết kế khoét rốn cho bé sơ sinh.',de:'Ultra-soft cotton surface, wetness indicator and umbilical cut-out for newborns.'},
+{id:6,c:'diaper',e:'🩲',vi:'Bỉm quần KUTIN Dry M',en:'KUTIN Dry Pants M',p:235000,o:260000,b:'-10%',age:'6–11kg',opt:['M 60 miếng','M 84 miếng'],dv:'Thấm hút nhanh, khô thoáng suốt 12 giờ, ôm sát không tràn.',de:'Fast absorption, 12 hours of dryness and a snug leak-free fit.'},
+{id:7,c:'diaper',e:'🩲',vi:'Bỉm quần KUTIN Dry L',en:'KUTIN Dry Pants L',p:245000,age:'9–14kg',opt:['L 54 miếng','L 76 miếng'],dv:'Chất liệu thoáng khí, cạp co giãn linh hoạt cho bé hay vận động.',de:'Breathable material with a stretchy waist for active babies.'},
+{id:8,c:'diaper',e:'🧷',vi:'Bỉm quần KUTIN Night XL',en:'KUTIN Night Pants XL',p:275000,b:'NEW',age:'12–17kg',opt:['XL 48 miếng','XXL 44 miếng'],dv:'Thấm hút gấp đôi cho giấc ngủ ngon suốt đêm, không hằn da.',de:'Double absorption for a full night’s sleep with no skin marks.'}];
+const nm=p=>p[lang],ds=p=>lang=='vi'?p.dv:p.de;
+const m=n=>n.toLocaleString(lang=='vi'?'vi-VN':'en-US')+'₫';
+const total=()=>cart.reduce((s,i)=>s+P.find(p=>p.id==i.id).p*i.n,0);
+const shipFee=()=>total()>=500000||!cart.length?0:30000;
+function card(p){return `<div class="card"><a href="#/p/${p.id}"><div class="im">${p.b?`<span class="badge">${p.b}</span>`:''}${p.e}</div><div style="font-weight:800;margin-top:8px">${nm(p)}</div></a><div><span class="price">${m(p.p)}</span>${p.o?`<span class="old">${m(p.o)}</span>`:''}</div><button class="btn" onclick="add(${p.id},0,1)">${t('add')}</button></div>`}
+function add(id,oi,n){const p=P.find(x=>x.id==id),o=p.opt[oi],e=cart.find(i=>i.id==id&&i.o==o);e?e.n+=n:cart.push({id,o,n});save();ui();toast()}
+function toast(){const b=$('#cnt');b.style.transform='scale(1.5)';setTimeout(()=>b.style.transform='',250)}
+function chg(i,d){cart[i].n+=d;if(cart[i].n<1)cart.splice(i,1);save();ui();route()}
+function ui(){$('#cnt').textContent=cart.reduce((s,i)=>s+i.n,0);$('#menu').innerHTML=[['/',t('home')],['/shop',t('shop')],['/about',t('about')],['/contact',t('contact')]].map(a=>`<a href="#${a[0]}">${a[1]}</a>`).join('');$('#lg').textContent=lang=='vi'?'🇻🇳 VI | EN':'🇬🇧 EN | VI';$('#ft1').textContent=t('ft1');$('#ft2').textContent=t('ft2');$('#ft3').textContent=t('ft3');document.querySelector('.pl').textContent=t('pol');document.documentElement.lang=lang}
+$('#lg').onclick=()=>{lang=lang=='vi'?'en':'vi';save();ui();route()};
+const V={
+home(){return `<section class="hero" style="margin:0 -18px;padding-left:18px;padding-right:18px"><div class="w" style="padding:0"><div><h1>${t('h1')}</h1><p>${t('h2')}</p><a class="btn" href="#/shop">${t('buy')}</a> <a class="btn o" href="#/shop/diaper">${t('diaper')}</a></div><div class="art">🍼👶🧷</div></div></section>
+<h2>${t('cats')}</h2><div class="feat"><a href="#/shop/milk"><div><span>🍼</span><h3>${t('milk')}</h3></div></a><a href="#/shop/diaper"><div><span>🩲</span><h3>${t('diaper')}</h3></div></a></div>
+<h2>${t('feat')}</h2><div class="grid">${P.slice(0,4).map(card).join('')}</div>
+<div class="feat" style="margin-top:36px">${[['✅','f1'],['⚡','f2'],['🔄','f3'],['🎁','f4']].map(a=>`<div><span>${a[0]}</span><p><b>${t(a[1])}</b></p></div>`).join('')}</div>`},
+shop(c){cat=c||'all';const L=P.filter(p=>(cat=='all'||p.c==cat)&&nm(p).toLowerCase().includes(q.toLowerCase()));
+return `<h2>${t('shop')}</h2><div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px">${['all','milk','diaper'].map(k=>`<a class="chip ${cat==k?'on':''}" href="#/shop/${k}">${t(k)}</a>`).join('')}</div><input id="sq" placeholder="${t('search')}" value="${q}" oninput="q=this.value;V.rs()"><div class="grid" id="gl">${L.map(card).join('')}</div>`},
+rs(){const L=P.filter(p=>(cat=='all'||p.c==cat)&&nm(p).toLowerCase().includes(q.toLowerCase()));$('#gl').innerHTML=L.map(card).join('')},
+prod(id){const p=P.find(x=>x.id==id);if(!p)return V.home();return `<div class="bc"><a href="#/">${t('home')}</a> › <a href="#/shop/${p.c}">${t(p.c)}</a> › ${nm(p)}</div>
+<div class="two"><div class="card"><div class="im" style="font-size:150px">${p.b?`<span class="badge">${p.b}</span>`:''}${p.e}</div></div>
+<div><h1 style="margin:0 0 8px">${nm(p)}</h1><div><span class="price" style="font-size:28px">${m(p.p)}</span>${p.o?`<span class="old">${m(p.o)}</span>`:''}</div><p style="color:var(--mute)">${ds(p)}</p>
+<label>${t('opt')}</label><select id="po">${p.opt.map((o,i)=>`<option value="${i}">${o}</option>`).join('')}</select>
+<label>${t('qty')}</label><br><div class="qty"><button onclick="pq(-1)">−</button><b id="pn" style="min-width:30px;text-align:center">1</b><button onclick="pq(1)">+</button></div><br><br>
+<button class="btn" onclick="add(${p.id},+$('#po').value,+$('#pn').textContent)">${t('add')}</button> <a class="btn y" href="#/checkout" onclick="add(${p.id},+$('#po').value,+$('#pn').textContent)">${t('buy')}</a>
+<div class="box tbl" style="margin-top:20px"><b>${t('spec')}</b><table><tr><td>${t('age')}</td><td>${p.age}</td></tr><tr><td>${lang=='vi'?'Xuất xứ':'Origin'}</td><td>${lang=='vi'?'Nhập khẩu chính hãng':'Officially imported'}</td></tr><tr><td>${lang=='vi'?'Bảo quản':'Storage'}</td><td>${lang=='vi'?'Nơi khô ráo, thoáng mát':'Cool and dry place'}</td></tr></table></div></div></div>
+<h2>${t('related')}</h2><div class="grid">${P.filter(x=>x.c==p.c&&x.id!=p.id).slice(0,3).map(card).join('')}</div>`},
+cart(){if(!cart.length)return `<h2>${t('cart')}</h2><div class="box">${t('empty')}<br><br><a class="btn" href="#/shop">${t('back')}</a></div>`;
+return `<h2>${t('cart')}</h2><div class="two s"><div class="box">${cart.map((i,k)=>{const p=P.find(x=>x.id==i.id);return `<div class="row" style="align-items:center"><div>${p.e} <b>${nm(p)}</b><br><small style="color:var(--mute)">${i.o} · ${m(p.p)}</small></div><div style="text-align:right"><div class="qty"><button onclick="chg(${k},-1)">−</button>${i.n}<button onclick="chg(${k},1)">+</button></div><br><b>${m(p.p*i.n)}</b></div></div>`}).join('')}</div>${sum()}</div>`},
+checkout(){if(!cart.length)return V.cart();return `<h2>${t('checkout')}</h2><div class="two s"><form class="box" onsubmit="return place(event)"><label>${t('name')} *</label><input id="fn" required><label>${t('phone')} *</label><input id="fp" type="tel" required><label>${t('email')}</label><input id="fe" type="email"><label>${t('prov')} *</label><select id="fv" required>${['TP. Hồ Chí Minh','Hà Nội','Đà Nẵng','Cần Thơ','Hải Phòng','Khác / Other'].map(x=>`<option>${x}</option>`).join('')}</select><label>${t('addr')} *</label><input id="fa" required><label>${t('note')}</label><textarea id="fo" rows="2"></textarea>
+<label>${t('pm')}</label><br><br>${[['cod','💵'],['bank','🏦'],['momo','📱'],['card','💳']].map((a,i)=>`<label class="pay"><input type="radio" name="pm" ${i==0?'checked':''}>${a[1]} ${t(a[0])}</label>`).join('')}<button class="btn" style="width:100%;margin-top:10px">${t('place')}</button></form>${sum(1)}</div>`},
+done(c){return `<div class="box" style="text-align:center;margin-top:30px"><div style="font-size:70px">🎉</div><h2>${t('ok')}</h2><p>${t('okp')} <b>${c}</b></p><a class="btn" href="#/shop">${t('back')}</a></div>`},
+about(){return `<h2>${t('abt')}</h2><div class="box"><p>${t('abtp')}</p></div><div class="feat" style="margin-top:16px">${[['✅','f1'],['⚡','f2'],['🔄','f3'],['🎁','f4']].map(a=>`<div><span>${a[0]}</span><p><b>${t(a[1])}</b></p></div>`).join('')}</div>`},
+contact(){return `<h2>${t('contact')}</h2><div class="two"><form class="box" onsubmit="event.preventDefault();this.innerHTML='<p>✅ ${t('sent')}</p>'"><label>${t('name')}</label><input required><label>${t('email')}</label><input type="email" required><label>${t('msg')}</label><textarea rows="4" required></textarea><button class="btn">${t('send')}</button></form><div class="box">📞 1900 6868<br>✉️ hello@kutin.vn<br>📍 Hồ Chí Minh, Việt Nam<br>🕗 08:00 – 21:00</div></div>`},
+policy(){return `<h2>${t('pt')}</h2><div class="box"><ul>${t('pb').map(x=>`<li>${x}</li>`).join('')}</ul></div>`},
+faq(){return `<h2>FAQ</h2>${t('faq').map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join('')}`}};
+function sum(){const s=total(),f=shipFee();return `<div class="box" style="align-self:start"><div class="row"><span>${t('sub')}</span><b>${m(s)}</b></div><div class="row"><span>${t('ship')}</span><b>${f?m(f):t('free')}</b></div><div class="row"><span>${t('total')}</span><b class="price">${m(s+f)}</b></div>${arguments[0]?'':`<br><a class="btn" style="display:block;text-align:center" href="#/checkout">${t('checkout')}</a>`}</div>`}
+function pq(d){const e=$('#pn');e.textContent=Math.max(1,+e.textContent+d)}
+function place(e){e.preventDefault();const c='KT'+Date.now().toString().slice(-7);cart=[];save();ui();$('#app').innerHTML=V.done(c);scrollTo(0,0);return false}
+function route(){const h=location.hash.slice(1)||'/',[,a,b]=h.split('/');let r;
+if(a=='shop')r=V.shop(b);else if(a=='p')r=V.prod(b);else if(V[a])r=V[a]();else r=V.home();
+$('#app').innerHTML=r;document.title='Sữa Bỉm KUTIN'}
+addEventListener('hashchange',()=>{route();scrollTo(0,0)});ui();route();
+</script>
+</body>
+</html>
